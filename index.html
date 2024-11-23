@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="UTF-8"></script>
+  </head>
+  <body>
+    
+     <div class="form">
+    <form class="login" action="" method="post">
+        <i class="fa-solid fa-circle-user"></i>
+        <input class="user-input" type="text" name="" placeholder="Username" required>
+        <input class="user-input" type="password" name="" placeholder="Password" required>
+        <div class="option-01">
+            <label class="remember-me"><input type="checkbox" name="">Remeber Me</label>
+            <a href="#">Forgot your password?</a>
+        </div>
+        <input class="btn" type="submit" name="" value="LOGIN">
+        <div class="option-02">
+            <p>Not Registered? <a href="#">Create an Account</a></p>
+        </div>  
+    </form>
+
+    <form class="sign-up" action="" method="post">
+        <i class="fa-solid fa-user-plus"></i>
+        <input class="user-input" type="text" name="" placeholder="Username" required>
+        <input class="user-input" type="email" name="" placeholder="Email Address" required>
+        <input class="user-input" type="password" name="" placeholder="Password" required>
+        <input class="btn" type="submit" name="" value="SIGN-UP">
+        <div class="option-02">
+            <p>Already Registered? <a href="#">Sign In</a></p>
+        </div>
+    </form>
+    </div>
+    
+    <script type="text/javascript">
+        $('.option-02 a').click(function(){
+            $('form').animate({
+                height:'toggle',opacity:'toggle'
+            },'slow');
+        } );
+    </script>
+  </body>
+</html>
